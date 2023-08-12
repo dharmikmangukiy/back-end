@@ -1,8 +1,10 @@
 import express from "express";
-import { loginController, productController } from "../Controller";
+import { loginController, productController,registerController } from "../Controller";
 
 const router = express.Router();
 router.post("/login", loginController.login);
+router.post("/register", registerController.register);
+
 //insert
 router.post("/products", productController.store);
 router.post("/tvproducts", productController.TVstore);

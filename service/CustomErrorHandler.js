@@ -6,7 +6,7 @@ class CustomErrorHandler extends Error {
   }
 
   static alreadyExist(message) {
-    return new CustomErrorHandler(409, message);
+    return new CustomErrorHandler(200, message);
   }
 
   static wrongCredentials(message = "Username or password is wrong!") {
